@@ -1,0 +1,22 @@
+import java.util.*;
+class Fibonacci_series
+{
+    public static void main()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("How many numbers You want: ");
+        int n=sc.nextInt();
+        int i1=1;int i2=1;int i3 ,count=0;
+        System.out.print(i1+"+");
+        System.out.print(i2);
+        for(int i=2;i<n;i++){
+            
+            i3=i1+i2;
+            System.out.print("+"+i3);
+            i1=i2;
+            i2=i3;
+            count =count+i3;
+        }
+        System.out.print("="+count);
+    }
+}
